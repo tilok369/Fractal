@@ -36,6 +36,7 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
+            this.messageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,11 +136,24 @@
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messageLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.messageLabel.Location = new System.Drawing.Point(47, 9);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(434, 13);
+            this.messageLabel.TabIndex = 8;
+            this.messageLabel.Text = "Put a dot ( . ) by mouse click in any place of the panel area and start the FRACT" +
+    "AL design ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 512);
+            this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numericUpDown1);
@@ -168,6 +182,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Label messageLabel;
     }
 }
 

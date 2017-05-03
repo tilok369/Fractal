@@ -34,6 +34,7 @@ namespace Fractal
 
         private void startButton_Click(object sender, EventArgs e)
         {
+            messageLabel.Visible = false;
             stopButton.Enabled = true;
             clearButton.Enabled = false;
             startButton.Enabled = false;
@@ -83,6 +84,7 @@ namespace Fractal
             stopButton.Enabled = false;
             startButton.Enabled = true;
             clearButton.Enabled = true;
+            messageLabel.Visible = true;
         }
 
         private void CreateDot(Control control, Point point)
